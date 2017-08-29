@@ -1,3 +1,7 @@
-<div>
-  <comp1></comp1>
-</div>
+<app-data-entry #dataEntry> </app-data-entry>
+
+<app-add-entry [message]="message" (AddClicked) = "test(dataEntry.getStudent(), $event)"></app-add-entry>
+
+<app-print-entry (PrintClicked) = "listStudents()"> </app-print-entry>
+
+<app-display [printing]="printing" [studentCollection] = "studentCollection"> </app-display>
