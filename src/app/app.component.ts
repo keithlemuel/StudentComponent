@@ -27,7 +27,7 @@ export class AppComponent {
       this.studentRecord = data;
       console.log(this.studentRecord);
       this.studentCollection.push(this.studentRecord);
-      //this.addStudentEntry(data);
+      this.printing=false;
     }
   }
 
@@ -47,7 +47,7 @@ export class AppComponent {
         this.clearValues();
         console.log("Hey");
       } else {
-        this.messages = 'Errors have been encountered and therefore cannot continue to process requested operation.';
+        this.messages = 'Errors have been Encountered and therefore cannot continue to process requested operation.';
       }
   }
 
